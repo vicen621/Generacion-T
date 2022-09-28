@@ -20,17 +20,51 @@
         </tr>
         <tr>
           <td>I'm Vicente Garcia Marti, a Junior Developer</td>
-          <td>
-            I work remotely and everyone pays me through paypal. The comission
-            is up to you
-          </td>
+          <td>I work remotely and everyone pays me through paypal. The comission is up to you</td>
           <td>I had two networks and currently I'm developing a minigame</td>
         </tr>
       </table>
     </div>
 
-    <br /><br /><br /><br />
+    <div class="contact-me">
+      <form action="#" method="post">
+        <p>
+          <label for="contact">Name: </label>
+          <input type="text" name="contact" id="contact-name" placeholder="Vicente" required />
+        </p>
+        <p>
+          <label for="contact">Last name: </label>
+          <input type="text" name="contact" id="contact-last-name" placeholder="García Martí" required />
+        </p>
 
-    <div class="contact-me"></div>
+        <p>
+          <label for="contact">E-mail: </label>
+          <input type="email" name="contact" id="contact-mail" placeholder="pepito@gmail.com" required />
+        </p>
+
+        <p>
+          <label for="contact"
+            >Contact purpose:
+            <select name="contact" id="contact-dropdown" required>
+              <option value="work">Work</option>
+              <option value="talk">Talk</option>
+              <option value="friends">Be Friends</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label for="contact">Subscribe to newsletter: </label>
+          <input type="checkbox" name="contact" id="contact-newsletter" />
+        </p>
+
+        <textarea name="contact" id="contact-comments" cols="30" rows="10" placeholder="Comments..."></textarea>
+
+        <p>
+          <button type="reset">Reset form</button>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
   </body>
 </html>
