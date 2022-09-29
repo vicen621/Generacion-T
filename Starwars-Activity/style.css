@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 40px 0 20px 0 ;
+}
+
+li {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#darth_vader {
+    font-size: 30px;
+}
+
+#luke_skywalker {
+    font-style: italic;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 10px;
+    background-color: rgba(127, 0, 128, 0.527);
+}
+
+.title {
+    margin: 0;
+}
+
+.empire {
+    background-color: rgba(255, 0, 0, 0.527);
+}
+
+.rebels {
+    background-color: rgba(0, 0, 255, 0.527);
+}
+
+.soldier {
+    letter-spacing: normal;
+    border: 1px dashed rgba(0, 247, 255, 0.527); 
+}
+
+.ship {
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.droids {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.apoyo {
+    margin: 75px;
+    text-align: center;
+}
+
+ul.rebels, ul.empire {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+ul.ship li {
+    margin-top: 50px;
+}
+
