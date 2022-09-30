@@ -1,6 +1,6 @@
 <h1 align="center"> 💻 Generacion-T </h1>
 <div align="center">
-<iframe src="https://giphy.com/embed/B4dt6rXq6nABilHTYM" width="480" height="452" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fun-meme-hacker-B4dt6rXq6nABilHTYM">via GIPHY</a></p>
+<img src="https://cdn.discordapp.com/attachments/861110403156017172/1025497623198703747/giphy.gif">
  </div>
 <br>
 
