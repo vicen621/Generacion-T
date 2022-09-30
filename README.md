@@ -1,5 +1,3 @@
-# Generacion-T
-
 <h1 align="center"> 💻 Generacion-T </h1>
 <div align="center">
 <img src="https://media.giphy.com/media/1C8bHHJturSx2/giphy.gif"/>
