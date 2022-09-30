@@ -1,0 +1,28 @@
+div {
+    margin: 0px auto;
+    height: 150px;
+    width: 1350px;
+}
+
+div.bread {
+    width: 1200px;
+}
+
+.bread {
+    background-color: #deb887;
+}
+
+#topBread {
+    border-bottom: 35px solid #b5956c;
+    border-radius: 300px 300px 60px 60px;
+}
+
+#bottomBread {
+    border-top: 35px solid #b5956c;
+    border-radius: 60px 60px 300px 300px;
+}
+
+#sausage {
+    border-radius: 100px;
+    background-color: #a52a2a;
+}
