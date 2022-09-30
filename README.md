@@ -8,5 +8,8 @@
 
 <h2 align="center"> 📝 Tareas </h2>
 
-*  #### [Starwars](https://github.com/vicen621/Generacion-T/tree/main/Starwars-Activity)
-*  #### [Panchito](https://github.com/vicen621/Generacion-T/tree/main/Panchito)
+
+|Tareas|Deployment  | Source Code |
+|--|--|--|
+| Starwars | [Link to deployment](https://vicen621.github.io/Starwars-Activity) | [Source Code](https://github.com/vicen621/Generacion-T/tree/main/Starwars-Activity) |
+| Panchito | [Link to deployment](https://vicen621.github.io/Starwars-Activity) | [Source Code](https://github.com/vicen621/Generacion-T/tree/main/Panchito) |
