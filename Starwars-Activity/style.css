@@ -27,7 +27,11 @@ li {
     align-items: center;
     flex-flow: column;
     padding: 10px;
-    background-color: rgba(127, 0, 128, 0.527);
+    color: white;
+    background-image: url(https://thumbs.dreamstime.com/b/galaxy-space-banner-view-telescope-distant-illustration-76836650.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .title {
