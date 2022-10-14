@@ -1,0 +1,13 @@
+div {
+    height: 300px;
+    width: 1200px;
+    border: 1px black dashed;
+    background-image: url(assets/pista.jpg);
+    background-size: 450px, 100px;
+
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
