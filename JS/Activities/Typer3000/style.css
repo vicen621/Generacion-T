@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("assets/background.webp");
+    background-size: 100%, 100%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container {
+    border: 2px #f69c55 dashed;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
