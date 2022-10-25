@@ -1,0 +1,14 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #202329;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    justify-content: space-around;
+  }
+  
+  .Icon {
+    color: white;
+    font-size: 4em !important;
+  }
