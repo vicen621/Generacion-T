@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import Character from "../components/Character";
 import { useState, useEffect } from "react";
 import Axios from "axios";
