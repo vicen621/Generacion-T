@@ -6,9 +6,7 @@ import CharacterCard from "./CharacterCard";
 function Character({ data }) {
   return (
     <div className="mt-4">
-      {data.length === 1 ? (
-        <CharacterCard char={data[0]} />
-      ) : (
+      {Array.isArray(data) ? (
         <Row xs={1} md={2} lg={3} xl={4} className="g-3">
           {data.map((char, i) => (
             <Col>
@@ -16,6 +14,8 @@ function Character({ data }) {
             </Col>
           ))}
         </Row>
+      ) : (
+        <CharacterCard char={data} />
       )}
     </div>
   );
