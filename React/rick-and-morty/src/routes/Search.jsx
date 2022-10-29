@@ -1,31 +1,38 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import Character from "../components/Character";
+import CharacterDisplay from "../components/CharacterDisplay";
+import { Spinner } from "react-bootstrap";
+import Navigation from "../components/Navigation";
 
 function Search() {
   const [char, setChar] = useState();
-  let { id, name } = useParams();
+  const [error, setError] = useState();
+  let { searchType, search } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    console.log(id ? "true" : "False");
+    const isId = searchType === "id";
     axios
       .get(
         `https://rickandmortyapi.com/api/character/${
-          id ? id : `?name=${name.toLowerCase().replace(" ", "+")}`
+          isId ? search : `?name=${search.toLowerCase().replace(" ", "+")}`
         }`
       )
-      .then((data) => setChar(data.data))
-      .catch(error => {
-        if (error.response) {
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
+      .then((data) => setChar(isId ? data.data : data.data.results))
+      .catch((error) => {
+        if (error.response && error.response.status === 404) {
+          navigate("/404");
         }
       });
-  }, [id, name]);
+  }, [searchType, search]);
 
-  return <Character data={char} />;
+  return (
+    <div>
+      <Navigation />
+      {char ? <CharacterDisplay data={char} /> : <Spinner animation="border" />}
+    </div>
+  );
 }
 
 export default Search;

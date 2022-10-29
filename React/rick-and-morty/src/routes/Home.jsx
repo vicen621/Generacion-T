@@ -1,5 +1,5 @@
 import React from "react";
-import Character from "../components/Character";
+import CharacterDisplay from "../components/CharacterDisplay";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
@@ -26,9 +26,9 @@ function Home() {
 
   return (
     <div>
-      <Navigation />
+      <Navigation/>
       {characters ? (
-        <Character data={characters} />
+        <CharacterDisplay data={characters} />
       ) : (
         <Spinner animation="border" />
       )}

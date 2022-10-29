@@ -1,8 +1,10 @@
-.App {
-  text-align: center;
+html {
   background-color: #3c3f47;
+  overflow-x: hidden;
+  height: 100%;
 }
 
-html {
+.App {
+  text-align: center;
   background-color: #3c3f47;
 }

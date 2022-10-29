@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Character from "../components/Character";
+import CharacterDisplay from "../components/CharacterDisplay";
 import Navigation from "../components/Navigation";
 import Spinner from "react-bootstrap/Spinner";
 function Characters() {
@@ -14,10 +14,10 @@ function Characters() {
 
   return (
     <div style={{ backgroundColor: "#3c3f47" }}>
-      <Navigation />
+      <Navigation/>
       {characters ? (
         <div className="grid-container">
-          <Character data={characters} />
+          <CharacterDisplay data={characters} />
         </div>
       ) : (
         <div className="grid-container">

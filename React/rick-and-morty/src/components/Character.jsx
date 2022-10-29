@@ -1,23 +1,19 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import CharacterCard from "./CharacterCard";
+import { Col, Container, Image, Ratio, Row } from "react-bootstrap";
 
-function Character({ data }) {
+function Character({ char }) {
   return (
-    <div className="mt-4">
-      {Array.isArray(data) ? (
-        <Row xs={1} md={2} lg={3} xl={4} className="g-3">
-          {data.map((char, i) => (
-            <Col>
-              <CharacterCard char={char} />
-            </Col>
-          ))}
-        </Row>
-      ) : (
-        <CharacterCard char={data} />
-      )}
-    </div>
+    <Container>
+      <Row>
+        <Col>
+        <Ratio aspect="16x9">
+          <Image src={char.image} fluid />
+        </Ratio>
+        </Col>
+        <Col>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

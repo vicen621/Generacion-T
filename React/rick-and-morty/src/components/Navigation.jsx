@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -11,6 +11,7 @@ import ToggleButton from "react-bootstrap/ToggleButton";
 function Navigation() {
   const [search, setSearch] = useState();
   const [searchType, setSearchType] = useState("name");
+  const navigate = useNavigate();
 
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
@@ -26,7 +27,7 @@ function Navigation() {
             </Nav.Link>
           </Nav>
 
-          <Form className="d-flex">
+          <Form className="d-flex" onSubmit={() => {navigate(`/characters/${searchType}/${search}`) }}>
             <ButtonGroup>
               <ToggleButton
                 key="id"
@@ -60,7 +61,7 @@ function Navigation() {
             <Button
               variant="outline-success"
               as={Link}
-              to={`/characters/${search}`}
+              to={`/characters/${searchType}/${search}`}
             >
               Search
             </Button>
