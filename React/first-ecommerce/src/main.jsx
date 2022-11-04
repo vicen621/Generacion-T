@@ -1,18 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { BrowserRouter } from 'react-router-dom'
-import { Flowbite } from 'flowbite-react';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 //https://flowbite-react.com/
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <Flowbite>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
       <App />
-    </Flowbite>
-    </BrowserRouter>
-  </React.StrictMode>
-)
+  </BrowserRouter>
+);

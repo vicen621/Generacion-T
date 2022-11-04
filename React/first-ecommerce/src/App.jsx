@@ -1,16 +1,9 @@
-import { useThemeMode } from 'flowbite-react';
 import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './components/Home';
 
 function App() {
-  const [mode, setMode, toggleMode] = useThemeMode(true)
-  
-  useEffect(() => {
-    setMode("Dark")
-  })
-
   return (
     <div className="App">
       <Routes>
