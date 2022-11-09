@@ -1,7 +1,5 @@
 # Store
 
-## Objetivos
-
 En este proyecto se busca crear un ecommerce hecho para un emprendimiento de ropa
 
 ## Funcionalidades
