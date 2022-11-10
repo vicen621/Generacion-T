@@ -15,7 +15,7 @@ function Navigation() {
             navbar
           >
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/products">Products</Nav.Link>
+            <Nav.Link as={Link} to="/catalog">Products</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
           <Form className="d-flex">

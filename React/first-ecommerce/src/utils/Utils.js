@@ -1,4 +1,4 @@
-function shuffle(array) {
+export function shuffle(array) {
   let currentIndex = array.length,
     randomIndex;
 
@@ -17,5 +17,3 @@ function shuffle(array) {
 
   return array;
 }
-
-export { shuffle };

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Navigation from "./Navigation";
+import Navigation from "../components/Navigation";
 import Axios from "axios";
 import { Carousel, Ratio, Spinner } from "react-bootstrap";
-import {shuffle} from '../utils/ArrayUtils'
+import {shuffle} from '../utils/Utils'
 
 function Home() {
   const [data, setData] = useState();
