@@ -6,15 +6,18 @@ import Product from "../components/Product";
 
 function Catalog() {
   const products = useProducts();
+  console.log(products);
 
   return (
     <>
       <Navigation />
       <Row xs={1} sm={2} md={3} lg={4}>
         {products.map((product) => {
-          <Col>
-            <Product data={product} />
-          </Col>;
+          return (
+            <Col>
+              <Product data={product} />
+            </Col>
+          );
         })}
       </Row>
     </>

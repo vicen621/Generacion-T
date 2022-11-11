@@ -1,7 +1,5 @@
-import axios from "axios";
-import React, { createContext, useContext, useState } from "react";
-import { useEffect } from "react";
-import { useReducer } from "react";
+import React, { createContext, useContext, useReducer } from "react";
+import { data } from "../../assets/data";
 import { TYPES } from "../actions/ShoppingActions";
 import { initialCart, shoppingReducer } from "../reducers/ShoppingReducer";
 
@@ -14,15 +12,7 @@ const ShoppingDispatchContext = createContext({
 });
 
 export function GlobalContext({ children }) {
-  const [products, setProducts] = useState([]);
   const [cart, dispatch] = useReducer(shoppingReducer, initialCart);
-
-  useEffect(() => {
-    axios.get("https://fakestoreapi.com/products/").then((response) => {
-      setProducts(response.data);
-    });
-  }, []);
-  
 
   function addProductToCart(product) {
     dispatch({ type: TYPES.ADD_TO_CART, product: product})
@@ -43,7 +33,7 @@ export function GlobalContext({ children }) {
         removeProductFromCart: {removeProductFromCart},
         clearCart: {clearCart}
       }}>
-        <ProductContext.Provider value={products}>
+        <ProductContext.Provider value={data}>
           {children}
         </ProductContext.Provider>
       </ShoppingDispatchContext.Provider>

@@ -1,8 +1,12 @@
 import React from 'react'
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
+import { useShoppingDispatch } from './context/ShoppingContext';
+
+//TODO: Ver porque tira el error Uncaught TypeError: context.addProductToCart is not a function
 
 function Product({data}) {
   const context = useShoppingDispatch();
+  console.log(context)
 
   return (
     <Card>
@@ -10,7 +14,7 @@ function Product({data}) {
         <Card.Body>
             <Card.Title>{data.name}</Card.Title>
             <Card.Text>{data.description}</Card.Text>
-            <Button variant="primary" onClick={dispatch.addProductToCart}>Add to cart</Button>
+            <Button variant="primary" onClick={() => context.addProductToCart(data)}>Add to cart</Button>
         </Card.Body>
     </Card>
   )
